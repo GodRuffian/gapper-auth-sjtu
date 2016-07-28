@@ -1,0 +1,7 @@
+---
+rpc:
+  gateway:
+    url: http://sjtu-gateway.gapper.in/api
+    client_id: <YOURCLIENTID>
+    client_secret: <YOURCLIENTSECRET>
+...
