@@ -1,7 +1,7 @@
 ---
 rpc:
   gateway:
-    url: http://sjtu-gateway.gapper.in/api
+    url: http://gateway.sjtu.labmai.com/api
     client_id: <YOURCLIENTID>
     client_secret: <YOURCLIENTSECRET>
 ...
