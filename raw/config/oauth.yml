@@ -1,7 +1,0 @@
-client:
-  servers:
-    sjtu.oauth2:
-      driver: gini
-      auth: OAUTHURL
-      client_id: CLIENTID
-      client_secret: CLIENTSECRET

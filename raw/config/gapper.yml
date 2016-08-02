@@ -1,6 +1,0 @@
----
-auth:
-    sjtu:
-        icon: assets/img/gapper-auth-sjtu/logo.png
-        name: 上海交大OAuth2
-...

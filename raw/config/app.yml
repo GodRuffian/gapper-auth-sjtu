@@ -1,7 +1,0 @@
----
-rpc:
-  gateway:
-    url: http://gateway.sjtu.labmai.com/api
-    client_id: <YOURCLIENTID>
-    client_secret: <YOURCLIENTSECRET>
-...
