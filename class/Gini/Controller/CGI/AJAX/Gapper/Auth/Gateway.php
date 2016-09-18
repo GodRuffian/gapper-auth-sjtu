@@ -29,7 +29,8 @@ class Gateway extends \Gini\Controller\CGI
         ]);
 
         return \Gini\IoC::construct('\Gini\CGI\Response\JSON', [
-            'redirect'=> $redirectURL
+            'redirect'=> $redirectURL,
+            'message'=> T('去统一身份认证登录')
         ]);
     }
 
