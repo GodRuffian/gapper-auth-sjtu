@@ -1,3 +1,4 @@
 ---
 auth-default-group-401: gateway
+auth-default-login: gateway
 ...
