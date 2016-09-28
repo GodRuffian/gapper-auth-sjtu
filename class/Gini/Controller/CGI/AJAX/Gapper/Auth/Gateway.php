@@ -198,7 +198,7 @@ class Gateway extends \Gini\Controller\CGI
             return self::_success($info);
         }
 
-        return self::_alert(T('一卡通用户已经激活, 但是暂时无法将该用户加入当前组, 请联系网站管理员处理!'));
+        return self::_alert(T('用户已经激活, 但是暂时无法将该用户加入当前组, 请联系网站管理员处理!'));
     }
 
     private static function _success(array $user=[])
