@@ -2,7 +2,7 @@
     "id": "gapper-auth-sjtu",
     "name": "上海交大OAuth2登录",
     "description": "Gapper Login UI",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "dependencies": {
         "oauth": "*",
         "gapper-auth-gateway": "*",
