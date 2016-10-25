@@ -169,23 +169,16 @@ class Gateway extends \Gini\Controller\CGI
         }
 
         try {
-            $uid = \Gini\Gapper\Client::getRPC()->gapper->user->registerUser([
+            $uid = \Gini\Gapper\Client::getRPC()->gapper->user->registerUserWithIdentity([
                 'username'=> $email,
                 'password'=> \Gini\Util::randPassword(),
                 'name'=> $name,
                 'email'=> $email
-            ]);
+            ], self::$identitySource, $username);
         } catch (\Exception $e) {
             return self::_alert(T('操作失败，请您重试'));
         }
         if (!$uid) return self::_alert(T('添加用户失败, 请重试!'));
-
-        try {
-            $bool = \Gini\Gapper\Client::getRPC()->gapper->user->linkIdentity((int)$uid, self::$identitySource, $username);
-        } catch (\Exception $e) {
-            return self::_alert(T('操作失败，请您重试'));
-        }
-        if (!$bool) return self::_alert(T('用户添加失败, 请换一个Email试试!'));
 
         try {
             $bool = \Gini\Gapper\Client::getRPC()->gapper->group->addMember((int)$current, (int)$uid);
